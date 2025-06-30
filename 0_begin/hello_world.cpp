@@ -10,11 +10,19 @@ int main() {
             << "my name is "
             << "Psi" << std::endl;
 
-  int i;
+  // int i;
 
-  for (i = 0; i < 10; i++) {
-    std::cout << i << std::endl;
+  // for (i = 0; i < 10; i++) {
+  //   std::cout << i << std::endl;
+  // }
+
+  int sum = 0;
+
+  for (int i = 1; i <= 10; i++) {
+    sum += i;
   }
+
+  std::cout << "total sum: " << sum << std::endl;
 
   return 0;
 }
