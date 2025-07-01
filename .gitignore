@@ -1,47 +1,92 @@
-# 데이터 폴더
-data/
-**/data/
+# Compiled Object files
+*.o
+*.obj
 
-# 빌드 관련
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug Symbols (macOS)
+*.dSYM/
+*.dSYM
+
+# Executables (no extension) - project specific
+hello_world
+if_else_guessgame
+if-else
+reference
+switch
+test
+vecor
+
+# Build directories
+build/
+bin/
+obj/
+out/
 **/build/
 **/install/
 **/target/
 
-# 로그 파일
+# Data directories
+data/
+**/data/
+
+# Log files
 **/log/
 *.log
 
-# 시스템 파일
+# IDE files
+.vscode/
+*.vscode
+.idea/
+*.xcodeproj/
+*.xcworkspace/
+
+# System files
 .DS_Store
 *.DS_Store
+Thumbs.db
 
-# Cargo/Rust 관련
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Autotools
+*.in
+configure
+config.log
+config.status
+autom4te.cache/
+
+# Rust/Cargo (if mixed project)
 *.cargo
 *.lock
+Cargo.lock
 
-# 실행파일
-*.exe
-*.out
-*
-!*/
-!*.*
-
-# 컴파일 관련
-*.o
-*.obj
-*.a
-*.so
-*.dylib
-
-# Python 관련 (추가하면 좋을 것들)
+# Python (if mixed project)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
-*.so
 .venv/
 venv/
-
-# VS cod
-*.vscode
+*.egg-info/
