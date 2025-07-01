@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/jsyun/Programming/cpp_ws/cpp_daily/0_begin/hello_world'
+relocations:     []
+...

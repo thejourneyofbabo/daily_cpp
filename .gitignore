@@ -1,17 +1,47 @@
-# 실행파일들
+# 데이터 폴더
+data/
+**/data/
+
+# 빌드 관련
+**/build/
+**/install/
+**/target/
+
+# 로그 파일
+**/log/
+*.log
+
+# 시스템 파일
+.DS_Store
+*.DS_Store
+
+# Cargo/Rust 관련
+*.cargo
+*.lock
+
+# 실행파일
 *.exe
 *.out
 *
 !*/
 !*.*
 
-# 컴파일 관련 파일들
+# 컴파일 관련
 *.o
 *.obj
 *.a
 *.so
 *.dylib
 
-# 기타
-.DS_Store
+# Python 관련 (추가하면 좋을 것들)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.venv/
+venv/
 
+# VS cod
+*.vscode
