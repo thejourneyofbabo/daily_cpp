@@ -28,6 +28,8 @@ reference
 switch
 test
 vecor
+new_delete
+reference-test
 
 # Build directories
 build/
