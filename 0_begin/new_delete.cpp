@@ -21,7 +21,7 @@ int main() {
 
   int* list = new int[arr_size];
   for (int i = 0; i < arr_size; i++) {
-    std::cout << i + 1 << " th component: ";
+    std::cout << i << " th component: ";
     std::cin >> list[i];
   }
   for (int i = 0; i < arr_size; i++) {
