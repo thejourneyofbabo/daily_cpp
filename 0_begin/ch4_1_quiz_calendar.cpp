@@ -12,7 +12,7 @@ class Date {
     if (day_temp <= max_day) {
       day_ = day_temp;
     } else {
-      month_++;
+      AddMonth(1);
       day_ = day_temp - max_day;
     }
   }
