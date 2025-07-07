@@ -2,14 +2,14 @@
 #include <string>
 
 class Employee {
-protected:
+ protected:
   std::string name;
   int age;
 
-  std::string position; // 직책 (이름)
-  int rank;             // 순위 (값이 클 수록 높은 순위)
+  std::string position;  // 직책 (이름)
+  int rank;              // 순위 (값이 클 수록 높은 순위)
 
-public:
+ public:
   Employee(std::string name, int age, std::string position, int rank)
       : name(name), age(age), position(position), rank(rank) {}
 
@@ -34,7 +34,7 @@ public:
 class Manager : public Employee {
   int year_of_service;
 
-public:
+ public:
   Manager(std::string name, int age, std::string position, int rank,
           int year_of_service)
       : Employee(name, age, position, rank), year_of_service(year_of_service) {}
@@ -56,15 +56,15 @@ public:
   }
 };
 class EmployeeList {
-  int alloc_employee; // 할당한 총 직원 수
+  int alloc_employee;  // 할당한 총 직원 수
 
-  int current_employee; // 현재 직원 수
-  int current_manager;  // 현재 매니저 수
+  int current_employee;  // 현재 직원 수
+  int current_manager;   // 현재 매니저 수
 
-  Employee **employee_list; // 직원 데이터
-  Manager **manager_list;   // 매니저 데이터
+  Employee **employee_list;  // 직원 데이터
+  Manager **manager_list;    // 매니저 데이터
 
-public:
+ public:
   EmployeeList(int alloc_employee) : alloc_employee(alloc_employee) {
     employee_list = new Employee *[alloc_employee];
     manager_list = new Manager *[alloc_employee];
