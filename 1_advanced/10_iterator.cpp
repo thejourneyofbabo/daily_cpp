@@ -9,4 +9,18 @@ template <typename T> void print_vector(std::vector<T> &vec) {
   }
 }
 
-int main() { std::vector<int> vec; }
+int main() {
+  std::vector<int> vec;
+  vec.push_back(10);
+  vec.push_back(20);
+  vec.push_back(30);
+  vec.push_back(40);
+
+  std::cout << "Initial vector state" << std::endl;
+  print_vector(vec);
+  std::cout << "-----------------------------" << std::endl;
+
+  // add 15 infront of vec[2]
+  vec.insert(vec.begin() + 2, 15);
+  print_vector(vec);
+}
